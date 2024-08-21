@@ -26,7 +26,7 @@ func Test_repoCreate(t *testing.T) {
 				Name:             "winter-foods",
 				Description:      "roasted chestnuts",
 				HomepageURL:      "http://example.com",
-				Visibility:       "public",
+				Visibility:       visibilityPublic,
 				HasIssuesEnabled: true,
 				HasWikiEnabled:   true,
 			},
@@ -67,7 +67,7 @@ func Test_repoCreate(t *testing.T) {
 				Name:             "winter-foods",
 				Description:      "roasted chestnuts",
 				HomepageURL:      "http://example.com",
-				Visibility:       "public",
+				Visibility:       visibilityPublic,
 				HasIssuesEnabled: true,
 				HasWikiEnabled:   true,
 			},
@@ -106,7 +106,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "github.com",
 			input: repoCreateInput{
 				Name:             "crisps",
-				Visibility:       "internal",
+				Visibility:       visibilityInternal,
 				OwnerLogin:       "snacks-inc",
 				HasIssuesEnabled: true,
 				HasWikiEnabled:   true,
@@ -148,7 +148,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "github.com",
 			input: repoCreateInput{
 				Name:             "crisps",
-				Visibility:       "internal",
+				Visibility:       visibilityInternal,
 				OwnerLogin:       "snacks-inc",
 				TeamSlug:         "munchies",
 				HasIssuesEnabled: true,
@@ -193,7 +193,7 @@ func Test_repoCreate(t *testing.T) {
 			input: repoCreateInput{
 				Name:                 "gen-project",
 				Description:          "my generated project",
-				Visibility:           "private",
+				Visibility:           visibilityPrivate,
 				TemplateRepositoryID: "TPLID",
 				HasIssuesEnabled:     true,
 				HasWikiEnabled:       true,
@@ -238,7 +238,7 @@ func Test_repoCreate(t *testing.T) {
 			input: repoCreateInput{
 				Name:                 "gen-project",
 				Description:          "my generated project",
-				Visibility:           "private",
+				Visibility:           visibilityPrivate,
 				TemplateRepositoryID: "TPLID",
 				HasIssuesEnabled:     true,
 				HasWikiEnabled:       false,
@@ -303,7 +303,7 @@ func Test_repoCreate(t *testing.T) {
 			input: repoCreateInput{
 				Name:                 "gen-project",
 				Description:          "my generated project",
-				Visibility:           "private",
+				Visibility:           visibilityPrivate,
 				TemplateRepositoryID: "TPLID",
 				HasIssuesEnabled:     false,
 				HasWikiEnabled:       true,
@@ -368,7 +368,7 @@ func Test_repoCreate(t *testing.T) {
 			input: repoCreateInput{
 				Name:                 "gen-project",
 				Description:          "my generated project",
-				Visibility:           "private",
+				Visibility:           visibilityPrivate,
 				TemplateRepositoryID: "TPLID",
 				HasIssuesEnabled:     false,
 				HasWikiEnabled:       false,
@@ -433,7 +433,7 @@ func Test_repoCreate(t *testing.T) {
 			input: repoCreateInput{
 				Name:                 "gen-project",
 				Description:          "my generated project",
-				Visibility:           "private",
+				Visibility:           visibilityPrivate,
 				TemplateRepositoryID: "TPLID",
 				HasIssuesEnabled:     true,
 				HasWikiEnabled:       true,
@@ -545,7 +545,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "github.com",
 			input: repoCreateInput{
 				Name:              "crisps",
-				Visibility:        "private",
+				Visibility:        visibilityPrivate,
 				LicenseTemplate:   "lgpl-3.0",
 				GitIgnoreTemplate: "Go",
 				HasIssuesEnabled:  true,
@@ -594,7 +594,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "example.com",
 			input: repoCreateInput{
 				Name:              "crisps",
-				Visibility:        "private",
+				Visibility:        visibilityPrivate,
 				LicenseTemplate:   "lgpl-3.0",
 				GitIgnoreTemplate: "Go",
 				HasIssuesEnabled:  true,
@@ -621,7 +621,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "github.com",
 			input: repoCreateInput{
 				Name:              "crisps",
-				Visibility:        "INTERNAL",
+				Visibility:        visibilityInternal,
 				OwnerLogin:        "snacks-inc",
 				LicenseTemplate:   "lgpl-3.0",
 				GitIgnoreTemplate: "Go",
@@ -653,7 +653,7 @@ func Test_repoCreate(t *testing.T) {
 			hostname: "github.com",
 			input: repoCreateInput{
 				Name:              "crisps",
-				Visibility:        "internal",
+				Visibility:        visibilityInternal,
 				OwnerLogin:        "snacks-inc",
 				TeamSlug:          "munchies",
 				LicenseTemplate:   "lgpl-3.0",
